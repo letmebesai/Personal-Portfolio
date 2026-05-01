@@ -2,11 +2,23 @@ const header = document.querySelector("[data-header]");
 const navToggle = document.querySelector("[data-nav-toggle]");
 const nav = document.querySelector("[data-nav]");
 const copyButton = document.querySelector("[data-copy-email]");
+const fallbackImage =
+  "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1 1'%3E%3C/svg%3E";
 
 const renderIcons = () => {
   if (window.lucide) {
     window.lucide.createIcons();
   }
+};
+
+const applyImageFallback = (image) => {
+  if (image.dataset.fallbackApplied) {
+    return;
+  }
+
+  image.dataset.fallbackApplied = "true";
+  image.alt = "";
+  image.src = fallbackImage;
 };
 
 const syncHeader = () => {
@@ -26,6 +38,14 @@ nav?.addEventListener("click", (event) => {
   if (event.target instanceof HTMLAnchorElement) {
     document.body.classList.remove("nav-open");
     navToggle?.setAttribute("aria-expanded", "false");
+  }
+});
+
+document.querySelectorAll("img").forEach((image) => {
+  image.addEventListener("error", () => applyImageFallback(image), { once: true });
+
+  if (image.complete && image.naturalWidth === 0) {
+    applyImageFallback(image);
   }
 });
 

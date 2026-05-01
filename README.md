@@ -1,13 +1,19 @@
-# Portfolio Website
+# Sai Srinivas Chintapenta Portfolio
 
-A static personal portfolio designed for GitHub Pages. It does not need a localhost server or build step.
+A static personal portfolio for Sai Srinivas Chintapenta, built for GitHub Pages. It does not need a localhost server or build step.
 
 ## Files
 
-- `index.html` contains the page content and placeholders.
+- `index.html` contains the portfolio content.
 - `styles.css` contains the responsive visual design.
 - `script.js` contains mobile navigation, header behavior, icon rendering, and email copy behavior.
 - `.github/workflows/pages.yml` deploys the site to GitHub Pages with GitHub Actions.
+
+## Live Site
+
+```text
+https://letmebesai.github.io/Personal-Portfolio/
+```
 
 ## Publish To GitHub Pages
 
@@ -18,33 +24,17 @@ A static personal portfolio designed for GitHub Pages. It does not need a localh
 5. Push to `main` or `master`.
 6. Open the Pages URL shown by GitHub after the workflow finishes.
 
-The usual URL format is:
+This project repository publishes at:
 
 ```text
-https://letmebesai.github.io/YOUR-REPOSITORY-NAME/
+https://letmebesai.github.io/Personal-Portfolio/
 ```
 
-For a user site repository named `letmebesai.github.io`, the URL is:
+## Profile Details
 
-```text
-https://letmebesai.github.io/
-```
-
-## Personalization Checklist
-
-Send these details so the placeholders can be replaced:
-
-- Full name
-- Short professional title
-- One-line intro
-- About paragraph
-- Location
-- Current role or target role
-- Education
-- Skills and tools
-- Project names, descriptions, GitHub links, live links, and screenshots if available
-- Email address
-- GitHub profile URL: `https://github.com/letmebesai`
-- LinkedIn profile URL
-- Resume link or PDF
-- Preferred colors or style references
+- Name: Sai Srinivas Chintapenta
+- GitHub: `https://github.com/letmebesai`
+- Email: `srinivassai438@gmail.com`
+- LinkedIn: `https://www.linkedin.com/in/sai-srinivas-chintapenta-2b74aa1b3`
+- Education: B.Tech Electronics and Communication Engineering, SASTRA Deemed University
+- Focus: AI/ML, deep learning, federated learning, data science, and software engineering fundamentals
