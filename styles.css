@@ -172,8 +172,8 @@ button {
   position: relative;
   display: grid;
   min-height: 88svh;
-  align-items: end;
-  padding: 118px 0 72px;
+  align-items: start;
+  padding: 132px 0 72px;
   color: var(--white);
   background:
     radial-gradient(circle at 18% 30%, rgba(33, 88, 255, 0.5), transparent 28%),
@@ -213,7 +213,7 @@ button {
   display: grid;
   grid-template-columns: minmax(0, 1fr) 330px;
   gap: clamp(28px, 6vw, 72px);
-  align-items: end;
+  align-items: start;
 }
 
 .hero-copy {
@@ -485,7 +485,7 @@ p {
 
 .project-grid {
   display: grid;
-  grid-template-columns: minmax(0, 1fr) minmax(0, 1.16fr) minmax(0, 1fr);
+  grid-template-columns: repeat(4, minmax(0, 1fr));
   gap: 18px;
   align-items: stretch;
 }
@@ -529,6 +529,12 @@ p {
 .project-card:nth-child(3) img {
   background:
     linear-gradient(135deg, rgba(255, 92, 69, 0.28), rgba(33, 88, 255, 0.22)),
+    var(--surface-strong);
+}
+
+.project-card:nth-child(4) img {
+  background:
+    linear-gradient(135deg, rgba(127, 160, 255, 0.3), rgba(255, 176, 46, 0.18)),
     var(--surface-strong);
 }
 
