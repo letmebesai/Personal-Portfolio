@@ -172,7 +172,7 @@ button {
   position: relative;
   display: grid;
   min-height: 88svh;
-  align-items: start;
+  align-items: center;
   padding: 132px 0 72px;
   color: var(--white);
   background:
